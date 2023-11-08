@@ -62,6 +62,7 @@ class ProjectController extends Controller
         $validated = $request->validated();
 
         $project->update($validated);
+        
         return to_route('admin.projects.show', $project);
     }
 

@@ -24,8 +24,16 @@
                 <label for="content" class="form-label">content</label>
                 <input type="text" class="form-control" name="content" id="content" aria-describedby="helpId"
                     placeholder="Acolyte is a action movies with..." value="{{ old('content') }}">
-                <small id="contentHelper" class="form-text text-muted">Type the content here</small>
+                <small id="contentHelper" class="form-text text-muted">
+                    Type the content here
+
+                    @error('content')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
+                </small>
             </div>
+
+
 
             <button type="submit" class="btn btn-primary">
                 Save
