@@ -23,6 +23,7 @@ Route::get('contacts', [PageController::class, 'contacts'])->name('contacts');
 Route::get('help', [PageController::class, 'help'])->name('help');
 
 
+
 Route::middleware('auth')
 ->prefix('admin')
 ->name('admin.')

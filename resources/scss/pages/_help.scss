@@ -1,0 +1,40 @@
+#help_page {
+    min-height: 90vh;
+
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgb(217, 157, 43);
+        background: linear-gradient(
+            90deg,
+            rgba(217, 157, 43, 1) 0%,
+            rgba(251, 255, 212, 1) 100%
+        );
+        border-radius: 8px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    h1,
+    h2 {
+        color: darkgreen;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    a {
+        color: black;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    header {
+        text-align: center;
+    }
+}
