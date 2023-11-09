@@ -3,10 +3,10 @@
 @section('content')
     <div class="text-center">
         <ul class="list-group pt-5">
-            <li class="list-group-item d-flex">
-                <div class="col-2">{{ $project->id }}</div>
-                <div class="col-5">{{ $project->name }}</div>
-                <div class="col-5">{{ $project->content }}</div>
+            <li class="list-group-item d-flex gap-3">
+                <div class="col-1">{{ $project->id }}</div>
+                <div class="col-4">{{ $project->name }}</div>
+                <div class="col-7">{{ $project->content }}</div>
             </li>
         </ul>
 
