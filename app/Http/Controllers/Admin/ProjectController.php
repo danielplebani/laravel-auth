@@ -34,6 +34,11 @@ class ProjectController extends Controller
     {
         $validated = $request->validated();
 
+        if ($request->has('cover_image')) {
+            $file_path = Storage::put('projects_images', $request->cover_image);
+            $validated['cover_image'] = $file_path;
+        }
+
         Project::create($validated);
 
         return to_route("admin.projects.index");
@@ -61,6 +66,15 @@ class ProjectController extends Controller
     public function update(ProjectRequest $request, Project $project)
     {
         $validated = $request->validated();
+
+        if ($request->has('cover_image') && $project->cover_image) {
+
+            Storage::delete($project->cover_image);
+
+            $newImageFile = $request->cover_image;
+            $path = Storage::put('projects_images', $newImageFile);
+            $validated['cover_image'] = $path;
+        }
 
         $project->update($validated);
 
