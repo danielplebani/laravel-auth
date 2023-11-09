@@ -26,10 +26,6 @@
                     placeholder="Acolyte is a action movies with..." value="{{ old('content') }}">
                 <small id="contentHelper" class="form-text text-muted">
                     Type the content here
-
-                    @error('content')
-                        <div class="text-danger">{{ $message }}</div>
-                    @enderror
                 </small>
             </div>
 

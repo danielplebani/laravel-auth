@@ -23,17 +23,16 @@ class ProjectRequest extends FormRequest
     {
         return [
             'name' => 'required|min:2|max:100',
-            'content' => 'required',
+            'content' => 'nullable',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'name.required' => 'Il nome del progetto è obbligatorio!',
-            'name.min' => 'Il nome del progetto deve avere almeno 2 caratteri!',
-            'name.max' => 'Il nome del progetto può avere massimo 100 caratteri!',
-            'content.required' => "la descrizione è obbligatoria!",
+            'name.required' => 'Il titolo è obbligatorio!',
+            'name.min' => 'Il titolo deve avere almeno 2 caratteri!',
+            'name.max' => 'Il titolo può avere massimo 100 caratteri!',
         ];
     }
 }

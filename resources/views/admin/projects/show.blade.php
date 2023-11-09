@@ -5,8 +5,8 @@
         <ul class="list-group pt-5">
             <li class="list-group-item d-flex gap-3">
                 <div class="col-1">{{ $project->id }}</div>
-                <div class="col-4">{{ $project->name }}</div>
-                <div class="col-6">{{ $project->content }}</div>
+                <div class="col-5">{{ $project->name }}</div>
+                <div class="col-5">{{ $project->content }}</div>
             </li>
         </ul>
 
