@@ -9,9 +9,9 @@
                     <div class="col-3">{{ $project->name }}</div>
                     <div class="col-4">{{ $project->content }}</div>
                     @if (str_contains($project->cover_image, 'http'))
-                        <img class="col-2" src="{{ $project->cover_image }}">
+                        <img class="col-1" src="{{ $project->cover_image }}">
                     @else
-                        <img class="col-2" src="{{ asset('storage/' . $project->cover_image) }}" alt="">
+                        <img class="col-1" src="{{ asset('storage/' . $project->cover_image) }}" alt="">
                     @endif
                 </li>
             </a>

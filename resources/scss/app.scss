@@ -1,1 +1,24 @@
-@import '~bootstrap/scss/bootstrap'
+@use "./pages/welcome";
+@use "./pages/contacts";
+@use "./pages/help";
+
+
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+    background: rgb(36, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(36, 0, 0, 1) 0%,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(199, 102, 28, 1) 25%,
+        rgba(208, 155, 68, 1) 50%,
+        rgba(198, 217, 43, 1) 75%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
