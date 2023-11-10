@@ -88,6 +88,6 @@ class ProjectController extends Controller
     {
         $project->delete();
         // POST REDIRECT GET
-        return to_route('admin.projects.index')->with('message', 'Welldone! Saber deleted successfully!!!');
+        return to_route('admin.projects.index');
     }
 }

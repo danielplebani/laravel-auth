@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light shadow">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+        <a class="navbar-brand d-flex align-items-center">
             <div class="logo_laravel">
                 <img style="width: 200px" src="{{ asset('img/logo.png') }}" alt="logo">
             </div>
@@ -16,20 +16,8 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'active' : '' }}"
+                    <a class="nav-link text-warning"
                         href="{{ url('/') }}">{{ __('Home') }}</a>
-                </li>
-                @guest
-                @else
-                    <li class="nav-item">
-                        <a class="nav-link {{ Route::currentRouteName() === 'contacts' ? 'active' : '' }}"
-                            href="{{ route('contacts') }}">{{ __('Contacts') }}</a>
-                    </li>
-                @endguest
-
-                <li class="nav-item">
-                    <a class="nav-link {{ Route::currentRouteName() === 'help' ? 'active' : '' }}"
-                        href="{{ route('help') }}">{{ __('Help') }}</a>
                 </li>
             </ul>
 
@@ -38,16 +26,16 @@
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="nav-link text-warning" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link text-warning" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle text-warning" href="#" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
                         </a>

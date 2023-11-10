@@ -3,9 +3,9 @@
 @section('content')
     <div id="dashboard">
         <div class="container">
-            <h2 class="fs-4 text-secondary my-4 text-white">
+            <h1 class="text-secondary my-4 text-white">
                 {{ __('Dashboard') }}
-            </h2>
+            </h1>
             <div class="row justify-content-center">
                 <div class="col">
                     <div class="card">

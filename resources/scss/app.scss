@@ -1,6 +1,4 @@
 @use "./pages/welcome";
-@use "./pages/contacts";
-@use "./pages/help";
 @use "./dashboard/dashboard";
 
 @import "~bootstrap/scss/bootstrap";
@@ -11,14 +9,11 @@
 }
 
 body {
-    background: rgb(36, 0, 0);
+    background: rgb(29, 26, 134);
     background: linear-gradient(
         90deg,
-        rgba(36, 0, 0, 1) 0%,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(199, 102, 28, 1) 25%,
-        rgba(208, 155, 68, 1) 50%,
-        rgba(198, 217, 43, 1) 75%,
-        rgba(255, 255, 255, 1) 100%
+        rgba(29, 26, 134, 1) 0%,
+        rgba(17, 0, 191, 1) 50%,
+        rgba(29, 0, 255, 1) 100%
     );
 }
