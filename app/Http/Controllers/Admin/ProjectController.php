@@ -38,6 +38,7 @@ class ProjectController extends Controller
             $file_path = Storage::put('projects_images', $request->cover_image);
             $validated['cover_image'] = $file_path;
         }
+        
 
         Project::create($validated);
 

@@ -3,10 +3,10 @@
 @section('content')
     <div class="container-md py-5">
 
-        <table class="table table-bordered">
+        <table class="table table-info table-hover table-bordered table-responsive">
             <thead>
                 <tr class="text-center">
-                    <th scope="col">ID</th>
+                    <th scope="col"></th>
                     <th scope="col">NOME</th>
                     <th scope="col">LINK</th>
                     <th scope="col">DESCRIZIONE PROGETTO</th>

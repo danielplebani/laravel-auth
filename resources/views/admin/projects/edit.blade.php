@@ -3,7 +3,7 @@
 @section('content')
     <div class="row my-3">
         <div class="col d-flex align-items-center mt-4">
-            <h1 class="text-white flex-grow-1 m-0">
+            <h1 style="font-family: 'Kanit', sans-serif;" class="text-white flex-grow-1 m-0">
                 {{ __('Modifica progetto') }}
             </h1>
         </div>
@@ -79,6 +79,7 @@
     </form>
 
     <div class="form-text text-white mb-5">
-        <i class="fa-solid fa-circle-exclamation"></i>=campi richiesti
+        <i class="fa-solid fa-circle-exclamation"></i> =campi richiesti
     </div>
 @endsection
+ 

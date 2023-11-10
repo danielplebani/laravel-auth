@@ -4,7 +4,7 @@
     <div class="container-md">
         <div class="row mb-4">
             <div class="col d-flex align-items-center mt-4">
-                <h1 class="text-white flex-grow-1 m-0">
+                <h1 style="font-family: 'Kanit', sans-serif;" class="text-white flex-grow-1 m-0">
                     {{ __('Progetti') }}
                 </h1>
                 <a class="text-decoration-none" href="{{ route('admin.projects.create') }}">
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <table class="table table-bordered">
+        <table class="table table-info table-hover table-bordered table-responsive">
             <thead>
                 <tr class="text-center">
                     <th scope="col"></th>

@@ -4,8 +4,8 @@
     <div class="container py-5">
         <div class="row mb-3">
             <div class="col d-flex align-items-center mt-4">
-                <h1 class="text-white flex-grow-1 m-0">
-                    {{ __('Create Project') }}
+                <h1 style="font-family: 'Kanit', sans-serif;" class="text-white flex-grow-1 m-0">
+                    {{ __('Crea un nuovo progetto') }}
                 </h1>
             </div>
         </div>
@@ -79,7 +79,7 @@
         </form>
 
         <div style="margin-top: 3rem" class="form-text text-white">
-            <i class="fa-solid fa-circle-exclamation"></i>=campi richiesti
+            <i class="fa-solid fa-circle-exclamation"></i> =campi richiesti
         </div>
 
     </div>

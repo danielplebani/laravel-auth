@@ -46,12 +46,18 @@
     width: 125px;
     border-radius: 40px;
     transition-duration: 0.3s;
+    background: rgb(23, 117, 43);
+    background: linear-gradient(
+        90deg,
+        rgba(23, 117, 43, 1) 0%,
+        rgba(0, 191, 22, 1) 50%,
+        rgb(25, 16, 89) 100%
+    );
 }
 
 .logout-button:hover .sign {
-    width: 30%;
+    width: 40%;
     transition-duration: 0.3s;
-    padding-left: 20px;
 }
 /* hover effect button's text */
 .logout-button:hover .text {
