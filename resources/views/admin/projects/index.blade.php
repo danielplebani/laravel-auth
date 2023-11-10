@@ -7,8 +7,14 @@
                 <h1 class="text-white flex-grow-1 m-0">
                     {{ __('Progetti') }}
                 </h1>
-                <a class="btn btn-warning d-flex align-items-center gap-2" href="{{ route('admin.projects.create') }}">
-                    <i class="fs-4 fa-solid fa-circle-plus"></i> CREA UN NUOVO PROGETTO
+                <a class="text-decoration-none" href="{{ route('admin.projects.create') }}">
+                    <button title="Add" class="cssbuttons-io-button">
+                        <svg height="25" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                        </svg>
+                        <span>Crea un nuovo progetto</span>
+                    </button>
                 </a>
             </div>
         </div>
@@ -16,12 +22,12 @@
         <table class="table table-bordered">
             <thead>
                 <tr class="text-center">
-                    <th scope="col">ID</th>
+                    <th scope="col"></th>
                     <th scope="col">NOME</th>
                     <th scope="col">LINK</th>
                     <th scope="col">DESCRIZIONE PROGETTO</th>
                     <th scope="col">IMMAGINE</th>
-                    <th scope="col"><i class="fs-4 fa-solid fa-wand-magic-sparkles"></i></th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -69,7 +75,8 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Elimina il progetto</h1>
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Elimina il progetto
+                                                    </h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -79,8 +86,10 @@
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Annulla</button>
-                                                    <form action="{{ route('admin.projects.destroy', ['project' => $project->id]) }}" method="POST">
-                                                        @csrf 
+                                                    <form
+                                                        action="{{ route('admin.projects.destroy', ['project' => $project->id]) }}"
+                                                        method="POST">
+                                                        @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger">Elimina</button>
                                                     </form>
