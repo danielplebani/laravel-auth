@@ -74,7 +74,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">
-                MODIFICA
+                CREA
             </button>
         </form>
 
