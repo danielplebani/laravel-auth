@@ -19,8 +19,6 @@ use App\Http\Controllers\Admin\ProjectController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
-Route::get('contacts', [PageController::class, 'contacts'])->name('contacts');
-
 
 
 Route::middleware('auth')
@@ -28,6 +26,8 @@ Route::middleware('auth')
 ->name('admin.')
 ->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+    Route::get('/wallet', [DashboardController::class, 'wallet'])->middleware(['auth', 'verified'])->name('wallet');
+    
     Route::resource('/projects', ProjectController::class);
 });
 

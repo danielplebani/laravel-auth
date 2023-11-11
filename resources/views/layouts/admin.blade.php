@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('page-title', 'dashboard')
+    </title>
 
     <!-- Fontawesome 6 cdn -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
@@ -93,13 +94,26 @@
                         <ul class="nav flex-column">
                             <li class="nav-item">
 
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}"
+                                <a style="padding-left: 12px" class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}"
                                     href="{{ route('admin.dashboard') }}">
-                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Dashboard
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <i class="fs-4 fa-solid fa-tachometer-alt fa-lg fa-fw"></i> 
+                                        Dashboard
+                                    </div>
                                 </a>
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}"
+                                <a class="ps-3 nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}"
                                     href="{{ route('admin.projects.index') }}">
-                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Projects
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <i class="fs-5 fa-solid fa-list-check"></i> 
+                                        Projects
+                                    </div>
+                                </a>
+                                <a class="ps-3 nav-link text-white {{ Route::currentRouteName() == 'admin.wallet' ? 'bg-secondary' : '' }}"
+                                    href="{{ route('admin.wallet') }}">
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <i class="fs-5 fa-solid fa-wallet"></i> 
+                                        Wallet
+                                    </div>
                                 </a>
                             </li>
 

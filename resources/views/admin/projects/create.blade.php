@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('page-title', 'crea progetto')
+
 @section('content')
     <div class="container py-5">
         <div class="row mb-3">

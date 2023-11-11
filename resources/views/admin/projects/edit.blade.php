@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('page-title', 'modifica progetto')
+
 @section('content')
     <div class="row my-3">
         <div class="col d-flex align-items-center mt-4">

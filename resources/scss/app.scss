@@ -1,6 +1,9 @@
 @use "./pages/welcome";
+@use "./pages/login";
 
 @use "./dashboard/dashboard";
+@use "./dashboard/wallet";
+
 
 @use "./partials/header";
 

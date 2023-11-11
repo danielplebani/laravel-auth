@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('page-title', 'progetti')
+
 @section('content')
     <div class="container-md">
         <div class="row mb-4">

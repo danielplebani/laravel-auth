@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="col d-flex gap-5">
-                    <div id="my-profile">
+                    <a style="text-decoration: none" href="/profile"><div id="my-profile">
                         <div class="card">
                             <div class="card__img"><svg xmlns="http://www.w3.org/2000/svg" width="100%">
                                     <rect fill="#ffffff" width="540" height="450"></rect>
@@ -112,7 +112,7 @@
                             <div class="card__title">{{ Auth::user()->name }}</div>
                             <div class="card__subtitle">Full Stack Web Developer</div>
                         </div>
-                    </div>
+                    </div></a>
 
                     <div id="social">
                         <div class="main">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div id="card-wallet" class="col">
+                    <a style="text-decoration: none" href="{{ route('admin.wallet') }}"><div id="card-wallet" class="col">
                         <div class="card wallet">
                             <div class="overlay"></div>
                             <div class="circle">
@@ -169,7 +169,7 @@
                             <p>Wallet</p>
                         </div>
                         
-                    </div>
+                    </div></a>
                 </div>
 
             </div>
