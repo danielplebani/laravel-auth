@@ -1,14 +1,15 @@
 @use "./pages/welcome";
-@use "./pages/login";
 
 @use "./dashboard/dashboard";
 @use "./dashboard/wallet";
 
-
-@use "./partials/header";
-
 @use "./components/logout-button";
 @use "./components/add-new-project";
+@use "./components/home-button";
+@use "./components/login-register-button";
+@use "./components/name-button";
+@use "./components/home-dashboard-button";
+
 
 @import "~bootstrap/scss/bootstrap";
 
