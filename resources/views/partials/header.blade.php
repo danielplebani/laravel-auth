@@ -40,7 +40,7 @@
                             <li class="nav-item login-register-button">
                                 <a class="nav-link" href="{{ route('register') }}">
                                     <button class="animated-button">
-                                        <span class="text-white">Register</span>
+                                        <span class="text-white">Registrati</span>
                                         <span></span>
                                     </button>
                                 </a>
@@ -60,7 +60,7 @@
                                     {{ __('Dashboard') }}
                                 </a>
                                 <a onmouseover="this.classList.add('active','bg-dark')" onmouseout="this.classList.remove('active','bg-dark')" class="border-0 dropdown-item bg-info rounded-bottom-4" href="{{ url('profile') }}">
-                                    {{ __('Profile') }}
+                                    {{ __('Profilo') }}
                                 </a>
                             </div>
                         </li>

@@ -3,7 +3,7 @@
 @section('content')
 <!-- Header -->
 <h2 class=" fw-semibold fs-2 text-white">
-    {{ __('Profile') }}
+    {{ __('Profilo') }}
 </h2>
 
 <!-- Data -->

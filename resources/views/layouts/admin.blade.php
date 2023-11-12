@@ -106,7 +106,7 @@
                                     href="{{ route('admin.projects.index') }}">
                                     <div class="d-flex gap-1 align-items-center">
                                         <i class="fs-5 fa-solid fa-list-check"></i> 
-                                        Projects
+                                        Progetti
                                     </div>
                                 </a>
                                 <a class="ps-3 nav-link text-white {{ Route::currentRouteName() == 'admin.wallet' ? 'bg-secondary' : '' }}"
