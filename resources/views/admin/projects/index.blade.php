@@ -36,18 +36,28 @@
                 @foreach ($projects as $project)
                     <tr class="text-center">
                         <th scope="row">{{ $project->id }}</th>
-                        <td class="col-3">{{ $project->name }}</td>
+                        <td class="col-3">
+                            <a style="text-decoration: none; color:black;"
+                                href="{{ route('admin.projects.show', ['project' => $project->id]) }}">{{ $project->name }}</a>
+                        </td>
                         <td>
                             <a href="{{ $project->link_github }}"><i class="fs-2 fa-brands fa-github mb-3"></i></a>
                             <a href="{{ $project->link_website }}"><i class="fs-4 fa-solid fa-link"></i></a>
                         </td>
-                        <td>{{ $project->content }}</td>
                         <td>
-                            @if (str_contains($project->cover_image, 'http'))
-                                <img width="150px" src="{{ $project->cover_image }}">
-                            @else
-                                <img width="150px" src="{{ asset('storage/' . $project->cover_image) }}" alt="">
-                            @endif
+                            <a style="text-decoration: none; color:black;"
+                                href="{{ route('admin.projects.show', ['project' => $project->id]) }}">{{ $project->content }}</a>
+                        </td>
+                        <td>
+                            <a style="text-decoration: none; color:black;"
+                                href="{{ route('admin.projects.show', ['project' => $project->id]) }}">
+                                @if (str_contains($project->cover_image, 'http'))
+                                    <img width="150px" src="{{ $project->cover_image }}">
+                                @else
+                                    <img width="150px" src="{{ asset('storage/' . $project->cover_image) }}"
+                                        alt="">
+                                @endif
+                            </a>
                         </td>
                         <td>
                             <div class="d-flex flex-column gap-1">
@@ -101,7 +111,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </td>
                     </tr>
                 @endforeach
